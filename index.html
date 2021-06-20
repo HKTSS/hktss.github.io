@@ -1,55 +1,68 @@
 <!DOCTYPE html>
-<html>
-  <head>
-   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400&amp;family=Roboto:wght@300&amp;display=swap">
-  <title>Backup Site - HKTSS</title>
-  </head>
-  <body>
-  <!-- Redirection Counter -->
-<script type="text/javascript">
-  var count = 10; // Timer
-  var redirect = "https://hktss.ml"; // Target URL
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="favicon.ico">
+  <title>Profile | HKTSS</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
 
-  function countDown() {
-    var timer = document.getElementById("timer"); // Timer ID
-    if (count > 0) {
-      count--;
-      timer.innerHTML = "You will be redirected to Main Site in " + count + " second(s)"; // Timer Message
-      setTimeout("countDown()", 1000);
-    } else {
-      window.location.href = redirect;
-    }
-  }
-</script>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<aside class="profile-card">
+  <header>
+    <!-- here’s the avatar -->
+    <a target="_blank" href="https://hktss.ml">
+      <img src="round_icn.png" class="hoverZoomLink">
+    </a>
 
-<div id="master-wrap">
-  <div id="logo-box">
+    <!-- the username -->
+    <h1>
+          Hong Kong Transport Simulation Studio
+          </h1>
 
-    <div class="animated fast fadeInUp">
-      <!-- div class="icon"></div -->
-      <img src="tss.png" class="logo">
-    </div>
+    <!-- and role or location -->
+    <h2>
+          Member of HKRSDA
+          </h2>
 
-    <div class="notice animated fadeInUp">
-      <p class="lead">Welcome to HKTSS's Backup Site</p>
-      <!--a class="btn animation" href="javascript:history.back()">&larr; Go to Main Site</a-->
-    </div>
+  </header>
 
-    <div class="footer animated slow fadeInUp">
-      <p id="timer">
-        <script type="text/javascript">
-          countDown();
-        </script>
-      </p>
-      <p class="copyright">&copy; Hong Kong Transport Simulation Studio <script>document.write(new Date().getFullYear())</script></p>
-    </div>
+  <!-- bit of a bio; who are you? -->
+  <div class="profile-bio">
+
+    <p>
+      A studio that makes different products for Hmmsim & OpenBVE.<br>Visit our <a targer="_blank" href="https://hktss.ml">main site</a> to learn more.
+    </p>
 
   </div>
-  <!-- /#logo-box -->
-</div>
-<!-- /#master-wrap -->
+
+  <!-- some social links to show off -->
+  <ul class="profile-social-links">
+    <li>
+      <a target="_blank" href="https://www.facebook.com/HKTransportSimulationStudio">
+        <i class="fa fa-facebook"></i>
+      </a>
+    </li>
+    <li>
+      <a target="_blank" href="https://instagram.com/hktransimstudio">
+        <i class="fa fa-instagram"></i>
+      </a>
+    </li>
+    <li>
+      <a target="_blank" href="https://twitter.com/hktransimstudio">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a target="_blank" href="https://github.com/HKTSS">
+        <i class="fa fa-github"></i>
+      </a>
+    </li>
+  </ul>
+</aside>
+<!-- partial -->
+  
 </body>
 </html>
