@@ -1,0 +1,32 @@
+<?php
+    $to = 'hksimulationstudio@gmail.com';
+    $firstname = $_POST["fname"];
+    $email= $_POST["email"];
+    $subject= $_POST["subject"];
+    $text= $_POST["message"];
+    $phone= $_POST["phone"];
+    
+
+
+    $headers = 'MIME-Version: 1.0' . "\r\n";
+    $headers .= "From: " . $email . "\r\n"; // Sender's E-mail
+    $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+
+    $message ='<table style="width:100%">
+        <tr>
+            <td>'.$firstname.'  '.$laststname.'</td>
+        </tr>
+        <tr><td>Email: '.$email.'</td></tr>
+        <tr><td>phone: '.$phone.'</td></tr>
+        <tr><td>Text: '.$text.'</td></tr>
+        
+    </table>';
+
+    if (@mail($to, $email, $message, $headers))
+    {
+        echo '信息已成功送出。';
+    }else{
+        echo '傳送失敗。請再試一次。';
+    }
+
+?>
