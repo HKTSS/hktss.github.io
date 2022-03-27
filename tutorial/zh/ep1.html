@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta charset="UTF-8">
+		<title>EP1</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@300;400;500&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="../css/reset.css">
+		<link rel="stylesheet" href="../css/fluent-replica.css">
+		<link rel="stylesheet" href="../css/main.css">
+		<link href="js/main.js">
+		<link href="js/objPreview.js">
+		<script src="../js/three.js"></script>
+	</head>
+		<body>
+			<div id="loader">
+				<div class="inner-loader"></div>
+			</div>
+			<nav class="navbar">
+				<li><a href="../index.html"><img src="../../img/logo/tss.png"></a></li>
+				<li><a class="navlink" href="../../index.html">最新消息</a></li>									
+				<li><a class="navlink" href="../../index.html">常見問題</a></li>
+				<li><a class="navlink" href="../../index.html">聯絡我們</a></li>
+				<li><a class="navlink" href="../../download.html">下載作品</a></li>					
+			</nav>
+			<div class="listview sidebar">
+				<div class="listview-division"></div>
+				<ul>
+					<li><a href="ep0.html">0: 前言</a></li>
+					<li><a href="ep1.html" class="selected">1: 三維空間概念</a></li>
+					<ul>
+						<li><a class="light-font">座標軸</a></li>
+						<li><a class="light-font">物件位置與路軌的關係</a></li>
+						<li><a class="light-font">教學簡介</a></li>
+						<li><a class="light-font">嗚謝</a></li>
+					</ul>
+					<li><a href="ep2.html">2: 檔案結構及格式</a></li>
+					<li><a href="ep3.html">3: 事前準備</a></li>
+				</ul>
+			</div>
+			<div id="fullscreenbox">
+				<div class="content"> 
+					<h1 class="content-header center">1: 三維空間概念</h1>
+					<img class="floatright fluent-img-container" width=550 src="img/xyz.png">
+					<h1 class="content-header">座標系</h1>
+					<h4>座標系在OpenBVE中有3個參數，而每個參數(軸)亦代表不同方向。</h4>
+					<h4 class="red">X軸: 左/右 (右=<span class="limegreen">正數</span>, 左=<span class="black">負數</span>)</h4>
+					<h4 class="green">Y軸: 上/下 (上=<span class="limegreen">正數</span>, 下=<span class="black">負數</span>)</h4>
+					<h4 class="blue">Z軸: 前/後 (前=<span class="limegreen">正數</span>, 後=<span class="black">負數</span>)</h4>
+					<br>
+					<h4>注: OpenBVE使用的大部份單位為米(m)，而玩家軌道的<span class="green">高度</span>預設為0m。</h4>
+					<h4>例子: 在此路線的500米，有一個物件位於玩家軌道右邊的10米，即代表以下數值:</h4>
+					<h4 class="red">X: 10(m)</h4>
+					<h4 class="green">Y: 0(m)</h4>
+					<h4 class="blue">Z: 500(m)</h4>
+					<img class="floatright fluent-img-container" width=750 src="img/curve.png">
+					<h1 class="content-header">物件位置與路軌的關係</h1>
+					<h4>與其他遊戲不同，遊戲物件的位置是基於玩家路軌的位置。</h4>
+                    <h4>而所有路線中的物件都是以"位於玩家軌道的左/右/上/下XX米"的邏輯來放置</h4>
+                    <h4>如果玩家的路軌修改到由直變彎，所有的景物亦會跟著轉彎，如圖片所示。</h4>
+					<h1 class="content-header">Placeholder</h1>
+					<h4>與其他遊戲不同，遊戲物件的位置是基於玩家路軌的位置。</h4>
+                    <h4>而所有路線中的物件都是以"位於玩家軌道的左/右/上/下XX米"的邏輯來放置</h4>
+                    <h4>如果玩家的路軌修改到由直變彎，所有的景物亦會跟著轉彎，如圖片所示。</h4>
+				</div>
+			</div>
+	</body>
+</html>

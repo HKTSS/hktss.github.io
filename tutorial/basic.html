@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta charset="UTF-8">
+		<title>OpenBVE Tutorial</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@300;400;500&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/fluent-replica.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link href="js/main.js">
+	</head>
+		<body>
+			<div id="loader">
+				<div class="inner-loader"></div>
+			</div>
+			<nav class="navbar">
+				<li><a href="./index.html"><img src="../img/logo/tss.png"></a></li>
+				<li><a class="navlink" href="../index.html">最新消息</a></li>									
+				<li><a class="navlink" href="../index.html">常見問題</a></li>
+				<li><a class="navlink" href="../index.html">聯絡我們</a></li>
+				<li><a class="navlink" href="../download.html">下載作品</a></li>					
+			</nav>
+			<div id="floatingbox" class="normal-margin">
+				<h1 class="parent-header">基楚知識</h1>
+				<div class="fluentcontainer" onclick="javascript:redirect('zh/ep0.html')">
+					<p class="fluentcontainer-icon">0</p>
+					<h2 class="tutorial-list-header">前言(必閱)</h2>
+					<p class="tutorial-list-caption">開發前的前言，強烈建議閱讀</p>
+				</div>
+				
+				<div class="fluentcontainer" onclick="javascript:redirect('zh/ep1.html')">
+					<p class="fluentcontainer-icon">1</p>
+					<h2 class="tutorial-header">OpenBVE 三維空間概念</h2>
+					<p class="tutorial-list-caption">開發前的前言，強烈建議閱讀</p>
+				</div>
+				
+				<div class="fluentcontainer" onclick="javascript:redirect('zh/ep2.html')">
+					<p class="fluentcontainer-icon">2</p>
+					<h2 class="tutorial-header">OpenBVE 檔案結構及格式</h2>
+					<p class="tutorial-caption">了解路線，物件的格式和構造</p>
+				</div>
+				
+				<div class="fluentcontainer" onclick="javascript:redirect('zh/ep3.html')">
+					<p class="fluentcontainer-icon">3</p>
+					<h2 class="tutorial-header">事前準備</h2>
+					<p class="tutorial-caption">準備製作需要的工具</p>
+				</div>
+			</div>
+	</body>
+	<script>
+	function redirect(str) {
+		document.getElementById("loader").style.display = "block";
+		window.location.href = str;
+	}
+	</script>
+</html>

@@ -1,0 +1,18 @@
+body {
+    background-color:#ddd;
+    font-family: Roboto, Noto Sans HK;
+    font-size: 16px;
+}
+
+.center {
+	text-align: center;
+}
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #333
+    }
+	
+	h4 {
+        color:white
+	}
+}

@@ -1,0 +1,53 @@
+#showarea {
+	text-align: center;
+}
+
+#studio {
+	text-align: center;
+	display: inline-block;
+	margin: 100px 20px 20px 20px;
+	background-color: #eee;
+	transition: .2s;
+    min-width: 290px;
+}
+
+#studio:hover {
+	box-shadow: 0px 0px 25px #888;
+	transform: scale(1.03)
+}
+
+#studio h4 {
+	margin-top: 20px;
+	font-weight: 400;
+	font-family: Roboto, "Noto Sans TC";
+	padding: 0px 20px 0px 20px
+}
+
+#studio p {
+	color: gray;
+	margin-top: 20px;
+	font-weight: 400;
+	font-family: Roboto, "Noto Sans TC"
+}
+
+#studio img{
+	margin-top: 20px;
+	width: 200px;
+	height: 200px;
+    object-fit: contain;
+}
+
+.fdlink a {
+    transition: .2s;
+    font-size: 26px;
+    color: #002277;
+    padding: 8px;
+}
+
+.fdlink a:hover {
+    color: #2266dd;
+}
+
+.fdlink {
+    padding: 10px;
+}
