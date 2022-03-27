@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function() {
 	"use strict";
 	var window_width 	 = $(window).width(),
 	window_height 		 = window.innerHeight,
@@ -116,6 +116,7 @@ window.onclick = function(event) {
 
 /* 13-2-2022 Update: Remove the mc_signup form or whatever that's called, does nothing. */
 $(document).ready(function() {
+        let selectedTab = "notice";
 
         $('.filter-btn').click(function() {
             /* Get the button value */
@@ -139,17 +140,18 @@ $(document).ready(function() {
 
         $('.tab-btn').click(function() {
             /* Get the button value */
-            let val = $(this).attr("value");
-
-            /* Remove .selected from all elements with class tab-btn */
+            selectedTab = $(this).attr("value");
             $(".tab-btn").removeClass("selected")
-            $(this).addClass("selected")
+            $(`.tab-btn`).each(function() {
+                var value = $(this).val();
+                if(value == selectedTab) $(this).addClass('selected')
+            });
             
             var list = document.getElementsByClassName("modalbody");
             for (var i = 0; i < list.length; i++) {
                 var elements = list.item(i)
 
-                if(!elements.classList.contains(val)) {
+                if(!elements.classList.contains(selectedTab)) {
                     $(elements).hide()
                 } else {
                     $(elements).show()
