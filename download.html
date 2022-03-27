@@ -85,7 +85,7 @@
                         <ul class="navbar-nav">
                             <li><a href="index.html#project">最新消息</a></li>
                             <li><a href="index.html#faq">常見問題</a></li>
-                            <li><a href="index.html#contact">聯絡我們</a></li>
+                            <!-- <li><a href="index.html#contact">聯絡我們</a></li> -->
                             <li><a href="links.html">相關連結</a></li>
                             <li><a href="#" class="selecteditem">作品下載</a></li>
                         </ul>
@@ -114,31 +114,6 @@
             <button class="filter-btn" value=type-addon>補檔</button>
         </div>
         <div class="container">
-            <!--LRT 705 Modal Reserved--
-					<div id="705-modal" class="modal">
-						<div class="modalcontent">
-							<span class="close" onclick="HideModal('705-modal')">&times;</span>
-							<div class="modalheader">
-								<h2>你已選擇下載: 輕鐵705線</h2>
-							</div>
-							<div class="modalbody">
-								<iframe src=".\terms\ob.html" style="height: 285px; width: 95%"></iframe>
-							</div>
-							<div class="modalfooter">
-							<label class="containera">
-								<input type="checkbox" name="checkbox" value="check" id="agree705"><h5>我已詳細閱讀並同意以上注意事項。</h5></input>
-								<span class="checkmark"></span>
-							</label>
-								<a href="https://bit.ly/3a9nlLq" target="_blank"
-								onclick="if(!document.getElementById('agree705').checked) {alert('你必須同意以上事項，才能下載本檔案。'); return false;}" oncontextmenu="return false;"
-								class="dlbutton"><i class="fas fa-download"></i>OpenBVE版 (126MB) - <i class="fab fa-google-drive"></i></a>
-								<a href="https://bit.ly/3a9nlLq" target="_blank"
-								onclick="if(!document.getElementById('agree705').checked) {alert('你必須同意以上事項，才能下載本檔案。'); return false;}" oncontextmenu="return false;"
-								class="dlbutton"><i class="fas fa-download"></i>Hmmsim版 (27MB) - <i class="fab fa-google-drive"></i></a>
-							</div>
-						</div>
-					</div>
-					<!--LRT 705 Modal Reserved-->
             <!--P4 Modal start-->
             <div id="p4-modal" class="type-train modal">
                 <div class="modalcontent">
@@ -158,14 +133,17 @@
                     </div>
                     <div class="modalfooter">
                         <label class="pure-material-checkbox">
-                            <input type="checkbox" name="checkbox" value="check" id="agreep4"></input><span style="font-weight:400">我已詳細閱讀並同意以上注意事項。</span>
+                            <input type="checkbox" name="checkbox" value="check" id="agreep4"></input><span
+                                style="font-weight:400">我已詳細閱讀並同意以上注意事項。</span>
                         </label><br>
                         <a href="https://drive.google.com/u/2/uc?id=1N91mU7lXgiDfJc0p6f23zjMGNuzgHGhB&export=download" target="_blank" onclick="if(!document.getElementById('agreep4').checked) {alert('你必須同意以上事項，才能下載本檔案。'); return false;}" oncontextmenu="return false;" class="dlbutton"><i class="fas fa-download"></i>OpenBVE版 (53MB) - <i class="fab fa-google-drive"></i>
                         </a>
-                        <a href="https://github.com/HKTSS/LRV-P4/releases/tag/2.0.1" target="_blank" onclick="if(!document.getElementById('agreep4').checked) {alert('你必須同意以上事項，才能下載本檔案。'); return false;}" oncontextmenu="return false;" class="dlbutton"><i class="fas fa-download"></i>OpenBVE版 (53MB) - <i class="fab fa-github"></i>
+                        <a href="https://github.com/HKTSS/LRV-P4/releases/tag/2.0.1" target="_blank" onclick="if(!document.getElementById('agreep4').checked) {alert('你必須同意以上事項，才能下載本檔案。'); return false;}" oncontextmenu="return false;" class="dlbutton"><i class="fas fa-download"></i>OpenBVE版
+                            (53MB) - <i class="fab fa-github"></i>
                         </a>
 
-                        <a href="https://bit.ly/37k4uvp" target="_blank" onclick="if(!document.getElementById('agreep4').checked) {alert('你必須同意以上事項，才能下載本檔案。'); return false;}" oncontextmenu="return false;" class="dlbutton"><i class="fas fa-download"></i>Hmmsim版 (27MB) - <i class="fab fa-google-drive"></i>
+                        <a href="https://bit.ly/37k4uvp" target="_blank" onclick="if(!document.getElementById('agreep4').checked) {alert('你必須同意以上事項，才能下載本檔案。'); return false;}" oncontextmenu="return false;" class="dlbutton"><i class="fas fa-download"></i>Hmmsim版 (27MB)
+                            - <i class="fab fa-google-drive"></i>
                         </a>
                     </div>
                 </div>
@@ -305,7 +283,8 @@
                     </div>
                     <div class="modalfooter">
                         <label class="pure-material-checkbox">
-                            <input type="checkbox" name="checkbox" value="check" id="agree284"></input><span style="font-weight:400">我已詳細閱讀並同意以上注意事項。</span>
+                            <input type="checkbox" name="checkbox" value="check" id="agree284"></input><span
+                                style="font-weight:400">我已詳細閱讀並同意以上注意事項。</span>
                         </label><br>
                         <a href="https://bit.ly/2ZoYwo6" target="_blank" onclick="if(!document.getElementById('agree284').checked) {alert('你必須同意以上事項，才能下載本檔案。'); return false;}" oncontextmenu="return false" class="dlbutton"><i class="fas fa-download"></i>OMSI2版 (1MB) -
                             <i class="fab fa-google-drive"></i></a>
@@ -316,12 +295,13 @@
 
             <!--Download page start-->
             <div class="section-top-border dlsection type-train">
-                <h2 class="mb-30">輕鐵第四期列車 Light Rail Vehicle Phase IV
+                <h2 class="mb-30">
+                    <img src="img/logo/ob.png" class="platform-logo" title="OpenBVE"><img src="img/logo/h2.png" class="platform-logo" title="Hmmsim 2">輕鐵第四期列車 Light Rail Vehicle Phase IV
                     <span>
-                    <a href="https://github.com/HKTSS/LRV-P4" target="_blank">
-						<i style="color:black" class="fa-brands fa-github" title="更多作品詳情及操作指南 More details and user guide"></i>
-                    </a>
-                </span>
+                        <a href="https://github.com/HKTSS/LRV-P4" target="_blank">
+                            <i class="fa-brands fa-github dlgithub" title="更多作品詳情及操作指南 More details and user guide"></i>
+                        </a>
+                    </span>
                 </h2>
                 <div class="row">
                     <img src="img/dlpg/p4.jpg" class="dlpreview">
@@ -333,7 +313,9 @@
                 </div>
             </div>
             <div class="section-top-border dlsection type-train">
-                <h2 class="mb-30">輕鐵第三期列車 Light Rail Vehicle Phase III</h2>
+                <h2 class="mb-30">
+                    <img src="img/logo/ob.png" class="platform-logo" title="OpenBVE"><img src="img/logo/h2.png" class="platform-logo" title="Hmmsim 2">輕鐵第三期列車 Light Rail Vehicle Phase III
+                </h2>
                 <div class="row">
                     <img src="img/dlpg/p3.jpg" class="dlpreview">
                     <div class="fileintro">
@@ -344,7 +326,7 @@
                 </div>
             </div>
             <div class="section-top-border dlsection type-train">
-                <h2 class="mb-30">HKRSC C-train 2019 增強版 Enhanced</h2>
+                <h2 class="mb-30"><img src="img/logo/ob.png" class="platform-logo" title="OpenBVE">HKRSC C-train 2019 增強版 Enhanced</h2>
                 <div class="row">
                     <img src="img/dlpg/c-train.jpg" alt="" class="dlpreview">
                     <div class="fileintro">
@@ -355,17 +337,21 @@
                 </div>
             </div>
             <div class="section-top-border dlsection type-addon">
-                <h2 class="mb-30">HKRSC 地下鐵路套裝荃灣綫材質補檔 TWL Texture Addon</h2>
+                <h2 class="mb-30">
+                    <img src="img/logo/ob.png" class="platform-logo" title="OpenBVE">HKRSC 地下鐵路套裝荃灣綫材質補檔 TWL Texture Addon
+                </h2>
                 <div class="row">
                     <img src="img/dlpg/twltex.jpg" alt="" class="dlpreview">
                     <div class="fileintro">
                         <p class="fileintro">作品平台：OpenBVE<br>作品類型：附加檔<br>路線編碼：Big5<br>路線原作者：HKRSC/Simon Man</p>
-                        <button class="dlbutton" onclick="ShowModal('twltex-modal')"><i class="fas fa-download"></i>下載</button>
+                        <button class="dlbutton" onclick="ShowModal('twltex-modal')"><i
+                                class="fas fa-download"></i>下載</button>
                     </div>
                 </div>
             </div>
             <div class="section-top-border dlsection type-addon">
-                <h2 class="mb-30">Winsome M-Train 聲音補檔 M-Train Sound Addon</h2>
+                <h2 class="mb-30"><img src="img/logo/ob.png" class="platform-logo" title="OpenBVE">Winsome M-Train 聲音補檔 M-Train Sound Addon
+                </h2>
                 <div class="row">
                     <img src="img/dlpg/m-train.jpg" alt="" class="dlpreview">
                     <div class="fileintro">
@@ -376,7 +362,7 @@
                 </div>
             </div>
             <div class="section-top-border dlsection type-addon">
-                <h2 class="mb-30">Dennis E500MMC 284 HOF</h2>
+                <h2 class="mb-30"><img src="img/logo/o2.png" class="platform-logo" title="OMSI 2">Dennis E500MMC 284 HOF</h2>
                 <div class="row">
                     <img src="img/dlpg/mmc.jpg" alt="" class="dlpreview">
                     <div class="fileintro">
@@ -400,13 +386,15 @@
                     </p>
                     <div class="footer-social d-flex align-items-center">
                         <a href="https://www.facebook.com/HKTransportSimulationStudio" target="_blank"><i
-										class="fa-brands fa-facebook"></i></a>
+                                class="fa-brands fa-facebook"></i></a>
                         <a href="https://www.instagram.com/hktransportsimulationstudio" target="_blank"><i
-										class="fa-brands fa-instagram"></i></a>
-                        <a href="https://twitter.com/hktransimstudio" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://twitter.com/hktransimstudio" target="_blank"><i
+                                class="fa-brands fa-twitter"></i></a>
                         <a href="https://www.youtube.com/channel/UC_eO6lDvecBjvbx77vbaFlw" target="_blank"><i
-										class="fa-brands fa-youtube"></i></a>
-                        <a href="https://forms.gle/gGQuevPA9cJ64YyV9" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                                class="fa-brands fa-youtube"></i></a>
+                        <a href="https://forms.gle/gGQuevPA9cJ64YyV9" target="_blank"><i
+                                class="fa-brands fa-whatsapp"></i></a>
                         <a href="https://github.com/HKTSS" target="_blank"><i class="fa-brands fa-github"></i></a>
                     </div>
                     <br>

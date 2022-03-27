@@ -3584,7 +3584,8 @@ h6 {
 }
 
 .dlbtn-type {
-    margin: 30px 0px 0px 34px;
+    position: relative;
+    left: 2.5%;
 }
 
 .tab-btn:hover {
@@ -3597,6 +3598,11 @@ h6 {
     position: absolute;
     top: 0;
     width: 100%;
+}
+
+.platform-logo {
+    height: 1.1em;
+    margin: 0px 10px 2.5px 0px;
 }
 
 
@@ -3670,6 +3676,9 @@ h6 {
         background-color: white;
         box-shadow: none;
         color: black;
+    }
+    .pure-material-checkbox>span::before {
+        border-color: #ccc;
     }
     #content-filter button {
         border-width: 1px;
