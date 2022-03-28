@@ -62,6 +62,13 @@
     font-weight: 300;
 }
 
+:root {
+    --slight-gray: #eee;
+    --normal-text-color: #111;
+    --gray: #ddd;
+    --bg-gray-one: #fafafa;
+}
+
 body {
     color: #777777;
     font-family: "Roboto", "Noto Sans HK", sans-serif;
@@ -154,6 +161,7 @@ h6 {
     margin-bottom: 0;
     margin-top: 0;
     font-weight: 400;
+    color: var(--normal-text-color);
 }
 
 .h1,
@@ -1099,7 +1107,7 @@ h6 {
 }
 
 .dlgithub {
-    color: black
+    color: var(--normal-text-color);
 }
 
 .genric-btn.link-border {
@@ -1991,7 +1999,7 @@ h6 {
 
 .navbar-nav .selecteditem:hover {
     color: #003388;
-    background-color: #eee;
+    background-color: #fff;
 }
 
 @media (max-width: 992px) {
@@ -2412,7 +2420,7 @@ h6 {
 
 .active-works-carousel .item .caption h6 {
     margin-bottom: 10px;
-    color: #222;
+    color: var(--normal-text-color);
     font-family: "Roboto", "Noto Sans HK";
     font-weight: 400;
 }
@@ -2482,7 +2490,7 @@ h6 {
 }
 
 .single-feature a {
-    color: #222;
+    color: var(--normal-text-color);
 }
 
 .single-feature:hover {
@@ -2496,7 +2504,7 @@ h6 {
 }
 
 .single-feature .title .lnr {
-    color: #222;
+    color: var(--normal-text-color);
     font-weight: 400;
     margin-right: 12px;
     font-size: 20px;
@@ -2561,7 +2569,7 @@ h6 {
 .counter-left p {
     font-size: 14px;
     font-weight: 300;
-    color: #222;
+    color: var(--gray);
 }
 
 .counter-left .single-facts {
@@ -2812,10 +2820,10 @@ h6 {
 }
 
 .dlpreview {
+    border-radius: 7px;
     width: 330px;
-    padding-left: 17px;
     object-fit: cover;
-    overflow: hidden;
+    margin-left: 15px;
     margin-bottom: 30px;
 }
 
@@ -2828,12 +2836,12 @@ h6 {
 .fileintro p {
     font-size: 18px;
     font-weight: 400;
-    color: black;
+    color: var(--normal-text-color);
     padding-bottom: 3px;
 }
 
 .fileintro {
-    padding-left: 10px;
+    padding-left: 20px;
 }
 
 @media (max-width: 995px) {
@@ -2978,7 +2986,7 @@ h6 {
 
 .section-top-border {
     padding-top: 50px;
-    border-top: 1px dotted #eee;
+    border-top: 1px solid var(--slight-gray);
 }
 
 .switch-wrap {
@@ -3236,9 +3244,7 @@ h6 {
     height: 100%;
     overflow: auto;
     /* Enable scroll if needed */
-    background-color: rgb(0, 0, 0);
-    /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     -webkit-animation-name: fade;
     -webkit-animation-duration: 0.3s;
     animation-name: fade;
@@ -3251,10 +3257,9 @@ h6 {
 .modalcontent {
     border-radius: 10px;
     position: absolute;
-    background-color: #fefefe;
+    background-color: var(--bg-gray-one);
     margin: auto;
     padding: 0;
-    border: 1px solid #888;
     margin-left: auto;
     margin-right: auto;
     left: 15%;
@@ -3278,7 +3283,7 @@ h6 {
     position: absolute;
     top: 10px;
     right: 25px;
-    color: #666;
+    color: var(--normal-text-color);
     font-size: 40px;
     font-family: Roboto;
     font-weight: 300;
@@ -3301,6 +3306,7 @@ h6 {
 }
 
 .modalheader h2 {
+    color: var(--normal-text-color);
     font-size: 26px;
 }
 
@@ -3372,7 +3378,7 @@ h6 {
     font-weight: 400;
     background-color: #f8f8f8;
     border: 1px solid #bbb;
-    color: black;
+    color: var(--normal-text-color);
     padding: 7px 35px;
     text-align: center;
     text-decoration: none;
@@ -3382,7 +3388,7 @@ h6 {
     transition: 0.3s;
     border-radius: 6px;
     margin-right: 10px;
-    margin-left: 10px;
+    color: var(--normal-text-color);
 }
 
 .dlbutton:hover {
@@ -3434,6 +3440,7 @@ h6 {
     width: 100%;
     cursor: pointer;
     font-weight: 600;
+    color: var(--normal-text-color);
 }
 
 
@@ -3446,7 +3453,7 @@ h6 {
     margin: 3px 11px 3px 1px;
     border: solid 2px;
     /* Safari */
-    border-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.6);
+    border-color: var(--normal-text-color);
     border-radius: 2px;
     width: 18px;
     height: 18px;
@@ -3577,10 +3584,10 @@ h6 {
 
 .tab-btn {
     transition: .2s;
-    color: black;
+    color: var(--normal-text-color);
     border-style: none;
     padding: 9px 18px;
-    background-color: #eee;
+    background-color: var(--slight-gray);
 }
 
 .dlbtn-type {
@@ -3609,24 +3616,17 @@ h6 {
 /*----------------------------------------------------- Thats all to add -----------------------------------------------------*/
 
 @media (prefers-color-scheme: dark) {
+     :root {
+        --slight-gray: #444;
+        --normal-text-color: #ddd;
+        --gray: #888;
+        --bg-gray-one: #2a2c2f;
+    }
     body,
     .whole-wrap,
     .dlbutton,
     .faq-area {
-        background-color: #2a2c2f;
-    }
-    h1,
-    h2,
-    .counter-left p,
-    .active-works-carousel .item .caption h6,
-    .fileintro p,
-    .dlbutton,
-    .single-feature a,
-    .single-feature .title .lnr {
-        color: #ddd;
-    }
-    .section-top-border {
-        border-top: 1px dotted #484848
+        background-color: var(--bg-gray-one);
     }
     .single-feature {
         border-style: solid;
@@ -3640,42 +3640,12 @@ h6 {
     .project-area {
         background-color: #2a2c2f;
     }
-    .dlgithub {
-        color: #ddd
-    }
-    .dlbutton:hover {
-        cursor: pointer;
-        box-shadow: 2px 5px 13px #999999;
-        color: #fff;
-    }
-    .header-btn {
-        background-color: #1a1a1a;
-        color: #fff;
-    }
-    .header-btn-d {
-        background-color: #1119;
-        color: #fff;
-    }
-    .header-btn-d:hover {
-        color: #ddd;
-    }
-    .modalcontent {
-        background-color: #1a1a1a;
-    }
-    .close {
-        color: #fff;
-    }
     .close:hover {
         color: #fff;
-    }
-    .pure-material-checkbox>span {
-        color: #fff;
-        font-weight: 400;
     }
     .dlbutton:hover {
         background-color: white;
         box-shadow: none;
-        color: black;
     }
     .pure-material-checkbox>span::before {
         border-color: #ccc;
@@ -3686,9 +3656,5 @@ h6 {
         border-color: #777;
         color: white;
         background-color: transparent;
-    }
-    #content-filter button:hover {
-        color: black;
-        background-color: white;
     }
 }
