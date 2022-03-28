@@ -170,6 +170,21 @@ $(document).ready(function() {
             }
         })
 
+        $('.dlbutton').click(function() {
+            let url = $(this).attr("url")
+            let checkBoxTarget = $(this).attr("check")
+            if (url == undefined || url.length == 0) {
+                return;
+            }
+
+            if (!document.getElementById(checkBoxTarget).checked) {
+                alert('你必須同意以上事項，才能下載本檔案。');
+                return;
+            }
+
+            window.open(url, "_blank").focus();
+        })
+
         $('.tab-btn').click(function() {
             /* Get the button value */
             selectedTab = $(this).attr("value");
