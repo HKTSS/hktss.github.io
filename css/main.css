@@ -2569,7 +2569,7 @@ h6 {
 .counter-left p {
     font-size: 14px;
     font-weight: 300;
-    color: var(--gray);
+    color: var(--normal-text-color);
 }
 
 .counter-left .single-facts {
