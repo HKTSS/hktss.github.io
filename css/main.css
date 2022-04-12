@@ -627,11 +627,11 @@ th {
 }
 
 .lnr {
-margin-right: 5px;
+    margin-right: 5px;
 }
 
 .fa-download {
-margin-right: 5px;
+    margin-right: 5px;
 }
 
 .transition {
@@ -3620,6 +3620,27 @@ h6 {
     margin: 0px 10px 2.5px 0px;
 }
 
+#scrolltop {
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 7px 1px #000;
+    z-index: 1000;
+    font-size: 20px;
+    background-color: #eee;
+    position: fixed;
+    min-width: 40px;
+    min-height: 40px;
+    right: 20px;
+    bottom: 20px;
+    transition: .2s;
+    transition: opacity .2s ease-in-out;
+}
+
+#scrolltop:hover {
+    cursor: pointer;
+    background-color: #ccc;
+}
+
 
 /*----------------------------------------------------- Thats all to add -----------------------------------------------------*/
 
@@ -3664,5 +3685,13 @@ h6 {
         border-color: #777;
         color: white;
         background-color: transparent;
+    }
+    #scrolltop {
+        color: white;
+        background-color: #333;
+    }
+    #scrolltop:hover {
+        cursor: pointer;
+        background-color: #555;
     }
 }
