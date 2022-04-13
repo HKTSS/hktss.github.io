@@ -3609,6 +3609,18 @@ h6 {
     cursor: pointer;
 }
 
+.tab-btn-disabled {
+    transition: .2s;
+    color: #777;
+    border-style: none;
+    padding: 9px 18px;
+    background-color: #ccc;
+}
+
+.tab-btn-disabled:hover {
+    cursor: not-allowed;
+}
+
 #navframe {
     position: absolute;
     top: 0;
