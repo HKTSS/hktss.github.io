@@ -148,7 +148,6 @@ $(document).ready(function() {
 
     /* 13-2-2022 Update: Remove the mc_signup form or whatever that's called, does nothing. */
     $(document).ready(function() {
-        checkWindowOnTop();
         let selectedTab = "notice";
 
         $('.filter-btn').click(function() {
@@ -211,16 +210,12 @@ $(document).ready(function() {
             }
         })
 
-        $(window).on('scroll', function() {
-            checkWindowOnTop();
-        });
-
-        function checkWindowOnTop() {
+        setInterval(() => {
             if ($(window).scrollTop() <= 10) {
                 $('#scrolltop').css('opacity', '0.0');
             } else {
                 $('#scrolltop').css('opacity', '1.0');
             }
-        }
+        }, 100);
     });
 });
