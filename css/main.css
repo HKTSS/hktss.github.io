@@ -1948,14 +1948,6 @@ h6 {
     right: 20px;
 }
 
-@media (max-width: 992px) {
-    .navbar-nav {
-        height: auto;
-        max-height: 400px;
-        overflow-x: hidden;
-    }
-}
-
 .default-header {
     position: absolute;
     top: 0;
@@ -3367,18 +3359,23 @@ h6 {
     }
 }
 
-@media (max-width: 376px) {
-    .dlbutton {
-        font-size: 14px;
-    }
-    .containera h5 {
-        font-size: 14px;
-    }
-}
-
 @media (max-width: 340px) {
     .modalheader h2 {
         font-size: 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar-nav {
+        height: auto;
+        max-height: 400px;
+        overflow-x: hidden;
+    }
+    .navbar-nav .selecteditem {
+        border-style: none;
+    }
+    .navbar-nav .selecteditem:hover {
+        background-color: transparent !important;
     }
 }
 
@@ -3403,6 +3400,15 @@ h6 {
     cursor: pointer;
     box-shadow: 2px 2px 10px #999999;
     color: #000;
+}
+
+@media (max-width: 376px) {
+    .dlbutton {
+        font-size: 14px;
+    }
+    .containera h5 {
+        font-size: 14px;
+    }
 }
 
 .pure-material-checkbox {
