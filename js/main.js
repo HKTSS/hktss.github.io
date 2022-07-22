@@ -217,7 +217,7 @@ $(document).ready(function() {
     setInterval(() => {
         if ($(window).scrollTop() <= 10) {
             $('#scrolltop').css('opacity', '0.0');
-        } else {
+        } else if ($(window).scrollTop() > 10 && $(`#preload`).css(`display`) == "none") {
             $('#scrolltop').css('opacity', '1.0');
         }
     }, 100);
