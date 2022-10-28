@@ -3257,6 +3257,7 @@ h6 {
 .modalcontent {
     border-radius: 10px;
     position: absolute;
+	background-color: white;
     background-color: var(--bg-gray-one);
     margin: auto;
     padding: 0;
@@ -3323,7 +3324,6 @@ h6 {
 
 .modalfooter {
     padding: 10px 20px 35px 2.5%;
-    color: white;
 }
 
 @media (max-width: 970px) {
@@ -3334,6 +3334,10 @@ h6 {
     .modalheader h2 {
         font-size: 22px;
     }
+}
+
+.tx-color {
+	color: black
 }
 
 
@@ -3379,6 +3383,17 @@ h6 {
     }
 }
 
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	.counter-left h2 {
+		background: none;
+		color: #17a2b8;
+	}
+	
+	.fa-github {
+		color: black;
+	}
+}
+
 .dlbutton {
     font-weight: 400;
     background-color: #f8f8f8;
@@ -3415,7 +3430,7 @@ h6 {
     z-index: 0;
     position: relative;
     display: inline-block;
-    color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.87);
+    color: rgba(var(--pure-material-onsurface-rgb), 0.87);
     font-family: var(--pure-material-font, "Noto Sans HK", "Roboto", BlinkMacSystemFont, -apple-system);
     font-size: 16px;
     line-height: 1.5;
@@ -3695,6 +3710,9 @@ h6 {
         background-color: white;
         box-shadow: none;
     }
+	.tx-color {
+		color: white
+	}
     .pure-material-checkbox>span::before {
         border-color: #ccc;
     }

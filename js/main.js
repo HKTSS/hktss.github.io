@@ -196,7 +196,7 @@ $(document).ready(function() {
         /* Get the button value */
         selectedTab = $(this).attr("value");
         $(".tab-btn").removeClass("selected")
-        $(`.tab-btn`).each(function() {
+        $(".tab-btn").each(function() {
             var value = $(this).val();
             if (value == selectedTab) $(this).addClass('selected')
         });
@@ -214,10 +214,10 @@ $(document).ready(function() {
     })
 
     /* Looped every 100ms or 0.1 second */
-    setInterval(() => {
+    setInterval(function() {
         if ($(window).scrollTop() <= 10) {
             $('#scrolltop').css('opacity', '0.0');
-        } else if ($(window).scrollTop() > 10 && $(`#preload`).css(`display`) == "none") {
+        } else if ($(window).scrollTop() > 10 && $("#preload").css("display") == "none") {
             $('#scrolltop').css('opacity', '1.0');
         }
     }, 100);
