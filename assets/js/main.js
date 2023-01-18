@@ -1,39 +1,14 @@
 $(document).ready(function() {
     "use strict";
-    var window_width = $(window).width()
-    var window_height = window.innerHeight
+    var window_height = window.innerHeight;
     var header_height = $(".default-header").height()
-    var header_height_static = $(".site-header.static").outerHeight()
     var fitscreen = window_height - header_height;
     $(".fullscreen").css("height", window_height)
     $(".fitscreen").css("height", fitscreen);
 
-    /* ----- Dynamic Window resize ----- */
-    // window.addEventListener("resize", setWindowSize); //Register event on window resize
-    // function setWindowSize() {
-    //     window_width = $(window).width(),
-    //         window_height = window.innerHeight,
-    //         header_height = $(".default-header").height(),
-    //         header_height_static = $(".site-header.static").outerHeight(),
-    //         fitscreen = window_height - header_height;
-    //     $(".fullscreen").css("height", window_height)
-    //     $(".fitscreen").css("height", fitscreen);
-    // }
-
 
     /* -------- Active Sticky ---------- */
     $(".default-header").sticky({ topSpacing: 0 });
-
-    $('.img-pop-up').magnificPopup({
-        type: 'image',
-        gallery: {
-            enabled: true
-        }
-    });
-
-    $(window).load(function() {
-        $('#preload').fadeOut();
-    });
 
     if ($('.counter').length) {
         $('.counter').counterUp({
@@ -196,7 +171,7 @@ $(document).ready(function() {
         /* Get the button value */
         selectedTab = $(this).attr("value");
         $(".tab-btn").removeClass("selected")
-        $(".tab-btn").each(function() {
+        $(`.tab-btn`).each(function() {
             var value = $(this).val();
             if (value == selectedTab) $(this).addClass('selected')
         });
@@ -214,11 +189,24 @@ $(document).ready(function() {
     })
 
     /* Looped every 100ms or 0.1 second */
-    setInterval(function() {
+    setInterval(() => {
         if ($(window).scrollTop() <= 10) {
             $('#scrolltop').css('opacity', '0.0');
-        } else if ($(window).scrollTop() > 10 && $("#preload").css("display") == "none") {
+        } else if ($(window).scrollTop() > 10 && $(`#preload`).css(`display`) == "none") {
             $('#scrolltop').css('opacity', '1.0');
         }
     }, 100);
+
+    /* DO NOT REMOVE, function for modal */
+    $('.close').click((e) => {
+        const target = $(e.target).attr("data-target");
+        $("#" + target).fadeOut("fast", function() {
+            document.getElementById(target).style.display = "none";
+        })
+    })
+
+    $('.dlbutton').click((e) => {
+        const modal = $(e.target).attr("data-modal");
+        document.getElementById(modal).style.display = "block";
+    })
 });

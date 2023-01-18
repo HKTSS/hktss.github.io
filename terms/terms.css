@@ -1,0 +1,24 @@
+* {
+    font-family: "Roboto", "Noto Sans HK";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+body {
+    background-color: #ddd;
+    margin: 0;
+    padding: 5px;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #333;
+        color: #ddd;
+    }
+}

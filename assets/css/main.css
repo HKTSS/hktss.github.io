@@ -67,6 +67,7 @@
     --normal-text-color: #111;
     --gray: #ddd;
     --bg-gray-one: #fafafa;
+    --nav-color: rgba(25, 35, 45, 0.85);
 }
 
 body {
@@ -1948,12 +1949,22 @@ h6 {
     right: 20px;
 }
 
+@keyframes top-to-btm {
+    from { transform: translateY(-100%); }
+    to { transform: translateY(0); }
+}
+
 .default-header {
     position: absolute;
     top: 0;
     left: 0;
     width: 100% !important;
     z-index: 9;
+}
+
+.nbl {
+    /* transform: translateY(-100%); */
+    /* animation: top-to-btm .5s; */
 }
 
 .menu-bar {
@@ -1978,6 +1989,10 @@ h6 {
 .navbar-light .navbar-toggler {
     color: rgba(255, 255, 255, 0.5);
     border-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-brand {
+    min-height: 68px;
 }
 
 .navbar-nav a {
@@ -2165,7 +2180,7 @@ h6 {
 
 @media (max-width: 992px) {
     .default-header {
-        background-color: #222;
+        background-color: var(--nav-color);
     }
 }
 
@@ -2174,7 +2189,7 @@ h6 {
 }
 
 .is-sticky .default-header {
-    background-color: rgba(25, 35, 45, 0.85);
+    background-color: var(--nav-color);
     backdrop-filter: blur(3px);
 }
 
@@ -2576,6 +2591,10 @@ h6 {
     margin-bottom: 26px;
 }
 
+.single-facts > h2 {
+    display: inline;
+}
+
 @media (max-width: 768px) {
     .counter-left {
         text-align: center;
@@ -2708,11 +2727,13 @@ h6 {
 }
 
 .footer-social a {
+    font-size: 25px;
     padding-right: 25px;
-    -webkit-transition: all 0.3s ease 0s;
-    -moz-transition: all 0.3s ease 0s;
-    -o-transition: all 0.3s ease 0s;
-    transition: all 0.3s ease 0s;
+    outline: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
 }
 
 .footer-social i {
@@ -3257,7 +3278,6 @@ h6 {
 .modalcontent {
     border-radius: 10px;
     position: absolute;
-	background-color: white;
     background-color: var(--bg-gray-one);
     margin: auto;
     padding: 0;
@@ -3301,16 +3321,13 @@ h6 {
 /* Modal Header */
 
 .modalheader {
+    display: inline-block;
     margin-top: 25px;
     margin-bottom: 20px;
     padding-left: 2.5%;
-}
-
-.modalheader h2 {
     color: var(--normal-text-color);
     font-size: 26px;
 }
-
 
 /* Modal Body */
 
@@ -3324,6 +3341,7 @@ h6 {
 
 .modalfooter {
     padding: 10px 20px 35px 2.5%;
+    color: white;
 }
 
 @media (max-width: 970px) {
@@ -3334,10 +3352,6 @@ h6 {
     .modalheader h2 {
         font-size: 22px;
     }
-}
-
-.tx-color {
-	color: black
 }
 
 
@@ -3383,17 +3397,6 @@ h6 {
     }
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-	.counter-left h2 {
-		background: none;
-		color: #17a2b8;
-	}
-	
-	.fa-github {
-		color: black;
-	}
-}
-
 .dlbutton {
     font-weight: 400;
     background-color: #f8f8f8;
@@ -3430,7 +3433,7 @@ h6 {
     z-index: 0;
     position: relative;
     display: inline-block;
-    color: rgba(var(--pure-material-onsurface-rgb), 0.87);
+    color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.87);
     font-family: var(--pure-material-font, "Noto Sans HK", "Roboto", BlinkMacSystemFont, -apple-system);
     font-size: 16px;
     line-height: 1.5;
@@ -3710,9 +3713,6 @@ h6 {
         background-color: white;
         box-shadow: none;
     }
-	.tx-color {
-		color: white
-	}
     .pure-material-checkbox>span::before {
         border-color: #ccc;
     }

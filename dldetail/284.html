@@ -1,43 +1,104 @@
-<html>
+<!DOCTYPE html>
+<html lang="zh-Hant">
+	<head>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Noto+Sans+HK:wght@500&display=swap" rel="stylesheet"> 
+		<link href="../terms/terms.css" rel="stylesheet">
+	</head>
 
-<head>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@300&display=swap" rel="stylesheet">
-    <link href="../css/terms.css" rel="stylesheet">
-</head>
+	<body class="center">
+		<h2>HKTSS Winsome E500MMC 284 HOF v1<br>多謝下載此產品</h2>
+		<h3>請留意: 請在到達濱景花園按PAGE UP轉上面的沙田牌</h3>
+		<table class="center" border=2>
+			<tr>
+				<td>HOF 顯示名稱</td><td>LED 顯示</td><td>目的地</td>
+			</tr>
+			<tr>
+				<td align=left>Private</td><td>私家車</td><td>N/A</td>
+			</tr>
+			<tr>
+				<td align=left>284_ShatinCentral</td>
+				<td>
+					<div class="dest">
+						<p class="zh">沙田市中心</p>
+						<p class="en">SHA TIN CENTRAL</p>
+					</div>
+					<span class="rt_no">284</span>
+				</td>
+				<td>沙田市中心 Shatin Central</td>
+			</tr>
+			<tr>
+				<td align=left>284_ShatinCentral</td>
+				<td>
+					<div class="dest">
+						<p class="zh">濱景花園</p>
+						<p class="en">RAVANA GARDEN</p>
+					</div>
+					<span class="rt_no">284</span>
+				</td>
+				<td>濱景花園 Ravana Garden</td>
+			</tr>
+			<tr>
+				<td align=left>ENVIRONMENT_KMB</td>
+				<td>今日九巴更環保</td>
+				<td>N/A</td>
+			</tr>
+			<tr>
+				<td align=left>KMB_21TH</td>
+				<td>馳騁廿一世紀</td>
+				<td>N/A</td>
+			</tr>
+		</table>
+		<h2>IBIS</h2>
+		<table class="center" border=2>
+			<tr>
+				<td>路線</td><td>方向</td>
+			</tr>
+			<tr>
+				<td>28400</td><td>01</td>
+			</tr>
+		</table>
+		<h2>鳴謝:</h2>
+		<p>HKBRDA提供電牌</p>
+	</body>
+	<style>
+		p {
+			margin: 0;
+			padding: 0;
+		}
 
-<body class="center">
-    <h2>HKTSS Winsome E500MMC 284 HOF v1<br>多謝下載此產品</h2>
-    <h3>請留意: 請在到達濱景花園按PAGE UP轉上面的沙田牌</h3>
-	<table class="center" border=2>
-		<tr>
-			<td>HOF Display Name</td><td>LED 顯示</td><td>目的地</td>
-		</tr>
-		<tr>
-			<td align=left>Private</td><td>私家車</td><td>N/A</td>
-		</tr>
-		<tr>
-			<td align=left>284_ShatinCentral</td><td>沙田市中心 Shatin Central</td><td>沙田市中心 Shatin Central</td>
-		</tr>
-		<tr>
-			<td align=left>284_ShatinCentral</td><td>濱景花園 Ravana Garden</td><td>濱景花園 Ravana Garden</td>
-		</tr>
-		<tr>
-			<td align=left>ENVIRONMENT_KMB</td><td>今日九巴更環保</td><td>N/A</td>
-		</tr>
-		<tr>
-			<td align=left>KMB_21TH</td><td>馳騁廿一世紀</td><td>N/A</td>
-		</tr>
-	</table>
-	<h2>IBIS</h2>
-	<table class="center" border=2>
-		<tr>
-			<td>路線</td><td>方向</td>
-		</tr>
-		<tr>
-			<td>28400</td><td>01</td>
-		</tr>
-	</table>
-</body>
+		table > tbody > tr > td:nth-child(2) {
+			vertical-align: middle;
+			text-align: center;
+		}
+		
+		.dest {
+			vertical-align: middle;
+			padding: 0;
+			margin: 5px 0;
 
+			display: inline-block;
+			text-align: center;
+		}
+
+		.dest > p {
+			line-height: 1em;
+		}
+
+		.zh {
+			font-size: 1.3em;
+		}
+
+		.en {
+			font-size: 0.8em;
+			margin: 0 -0.5em;
+			transform: scaleX(0.9);
+		}
+
+		.rt_no {
+			display: inline-block;
+			vertical-align: middle;
+			font-size: 2em;
+			transform: scaleY(1.3);
+		}
+	</style>
 </html>

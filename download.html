@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="img/logo/favicon.ico">
+    <link rel="shortcut icon" href="assets/img/logo/favicon.ico">
 
     <!-- Author Meta -->
     <meta name="author" content="HKTSS 香港交通模擬工作室">
@@ -48,51 +48,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@400;500&display=swap" rel="stylesheet">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/linearicons.css">
-    <link rel="stylesheet" href="css/nice-select.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="assets/css/linearicons.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 
 <body>
-    <div id="preload">
+    <!-- <div id="preload">
         <div class="sk-folding-cube vertical-center">
             <div class="sk-cube1 sk-cube"></div>
             <div class="sk-cube2 sk-cube"></div>
             <div class="sk-cube4 sk-cube"></div>
             <div class="sk-cube3 sk-cube"></div>
         </div>
-    </div>
+    </div> -->
     <!-- Start banner Area -->
+    <!-- Navbar -->
     <button id="scrolltop"><i class="fa-solid fa-arrow-up"></i></button>
+    
     <section class="generic-banner relative">
-        <!-- Start Header Area -->
         <header class="default-header">
-            <nav class="navbar navbar-expand-lg  navbar-light">
-                <div class="container">
-                    <a class="navbar-brand" href="index.html">
-                        <img src="img/logo/tss.png">
-                    </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="text-white lnr lnr-menu"></span>
-                    </button>
-
-                    <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarSupportedContent">
-                        <ul class="navbar-nav">
-                            <li><a href="index.html#project">最新消息</a></li>
-                            <li><a href="index.html#faq">常見問題</a></li>
-                            <!-- <li><a href="index.html#contact">聯絡我們</a></li> -->
-                            <li><a href="links.html">相關連結</a></li>
-                            <li><a href="https://hktss.github.io/mtr-pids">PIDS 模擬器</a></li>
-                            <li><a href="#" class="selecteditem">作品下載</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+            <div id="navbar"></div>
         </header>
-        <!-- End Header Area -->
+        
         <div class="container">
             <div class="row height align-items-center justify-content-center">
                 <div class="col-lg-10">
@@ -116,7 +97,7 @@
             <!--P4 Modal start-->
             <div id="p4-modal" class="type-train modal">
                 <div class="modalcontent">
-                    <span class="close" onclick="HideModal('p4-modal')">&times;</span>
+                    <div class="close" data-target="p4-modal">&times;</div>
                     <div class="modalheader">
                         <h2>你已選擇下載: 輕鐵第四期列車</h2>
                     </div>
@@ -125,10 +106,10 @@
                         <button class="tab-btn-disabled" value=detail>作品內容</button>
                     </div>
                     <div class="modalbody notice">
-                        <iframe src=".\terms\ob.html" style="height: 285px; width: 95%"></iframe>
+                        <iframe src="./terms/ob.html?credit=HKBRDA提供輕鐵電牌" style="height: 285px; width: 95%"></iframe>
                     </div>
                     <div class="modalbody detail" style="display: none;">
-                        <iframe src=".\dldetail\p4.html" style="height: 285px; width: 95%"></iframe>
+                        <iframe src="./dldetail/p4.html" style="height: 285px; width: 95%"></iframe>
                     </div>
                     <div class="modalfooter">
                         <label class="pure-material-checkbox">
@@ -146,7 +127,7 @@
             <!--P3 Modal start-->
             <div id="p3-modal" class="type-route modal">
                 <div class="modalcontent">
-                    <span class="close" onclick="HideModal('p3-modal')">&times;</span>
+                    <span class="close" data-target="p3-modal">&times;</span>
                     <div class="modalheader">
                         <h2>你已選擇下載: 輕鐵第三期列車</h2>
                     </div>
@@ -155,10 +136,10 @@
                         <button class="tab-btn-disabled" value=detail>作品內容</button>
                     </div>
                     <div class="modalbody notice">
-                        <iframe src=".\terms\ob.html" style="height: 285px; width: 95%"></iframe>
+                        <iframe src="./terms/ob.html" style="height: 285px; width: 95%"></iframe>
                     </div>
                     <div class="modalbody detail" style="display: none;">
-                        <iframe src=".\dldetail\p3.html" style="height: 285px; width: 95%"></iframe>
+                        <iframe src="./dldetail/p3.html" style="height: 285px; width: 95%"></iframe>
                     </div>
                     <div class="modalfooter">
                         <label class="pure-material-checkbox">
@@ -174,7 +155,7 @@
             <!--C-Train 2019 Modal start-->
             <div id="ctrain-modal" class="modal">
                 <div class="modalcontent">
-                    <span class="close" onclick="HideModal('ctrain-modal')">&times;</span>
+                    <span class="close" data-target="ctrain-modal">&times;</span>
                     <div class="modalheader">
                         <h2>你已選擇下載: HKRSC C-train 2019 增強版</h2>
                     </div>
@@ -183,10 +164,10 @@
                         <button class="tab-btn-disabled" value=detail>作品內容</button>
                     </div>
                     <div class="modalbody notice">
-                        <iframe src=".\terms\ob.html" style="height: 285px; width: 95%"></iframe>
+                        <iframe src="./terms/ob.html" style="height: 285px; width: 95%"></iframe>
                     </div>
                     <div class="modalbody detail" style="display: none;">
-                        <iframe src=".\dldetail\edited-c.html" style="height: 285px; width: 95%"></iframe>
+                        <iframe src="./dldetail/edited-c.html" style="height: 285px; width: 95%"></iframe>
                     </div>
                     <div class="modalfooter">
                         <label class="pure-material-checkbox">
@@ -201,7 +182,7 @@
             <!--TWL tex modal Modal start-->
             <div id="twltex-modal" class="modal">
                 <div class="modalcontent">
-                    <span class="close" onclick="HideModal('twltex-modal')">&times;</span>
+                    <span class="close"  data-target="twltex-modal">&times;</span>
                     <div class="modalheader">
                         <h2>你已選擇下載: HKRSC 地下鐵路套裝荃灣綫材質補檔</h2>
                     </div>
@@ -228,7 +209,7 @@
             <!--M-Train sound Modal start-->
             <div id="msound-modal" class="modal">
                 <div class="modalcontent">
-                    <span class="close" onclick="HideModal('msound-modal')">&times;</span>
+                    <span class="close" data-target="msound-modal">&times;</span>
                     <div class="modalheader">
                         <h2>你已選擇下載: Winsome M-Train 聲音補檔</h2>
                     </div>
@@ -255,25 +236,26 @@
             <!--284 E500MMC HOF Modal start-->
             <div id="284-hof-modal" class="modal">
                 <div class="modalcontent">
-                    <span class="close" onclick="HideModal('284-hof-modal')">&times;</span>
+                    <span class="close" data-target="284-hof-modal">&times;</span>
                     <div class="modalheader">
                         <h2>你已選擇下載: Dennis E500MMC 284 HOF</h2>
                     </div>
                     <div class="dlbtn-type">
                         <button class="tab-btn selected" value=notice>注意事項</button>
-                        <button class="tab-btn-disabled" value=detail>作品內容</button>
+                        <button class="tab-btn" value=detail>作品內容</button>
                     </div>
                     <div class="modalbody notice">
-                        <iframe src=".\terms\omsi.html" style="height: 285px; width: 95%"></iframe>
+                        <iframe src="./terms/omsi.html?credit=HKBRDA提供電牌" style="height: 285px; width: 95%"></iframe>
                     </div>
                     <div class="modalbody detail" style="display: none;">
-                        <iframe src=".\dldetail\284.html" style="height: 285px; width: 95%"></iframe>
+                        <iframe src="./dldetail/284.html" style="height: 285px; width: 95%"></iframe>
                     </div>
                     <div class="modalfooter">
                         <label class="pure-material-checkbox">
                             <input type="checkbox" name="checkbox" value="check" id="agree284"></input><span
                                 style="font-weight:400">我已詳細閱讀並同意以上注意事項。</span>
-                        </label><br>
+                        </label>
+                        <br>
                         <button url="https://bit.ly/2ZoYwo6" oncontextmenu="return false;" check="agree284" class="dlbutton"><i class="fas fa-download"></i>OMSI 2版 (1MB) - <i class="fab fa-google-drive"></i></button>
                     </div>
                 </div>
@@ -283,7 +265,7 @@
             <!--Download page start-->
             <div class="section-top-border dlsection type-train">
                 <h2 class="mb-30">
-                    <img src="img/logo/ob.png" class="platform-logo" title="OpenBVE"><img src="img/logo/h2.png" class="platform-logo" title="Hmmsim 2">輕鐵第四期列車 Light Rail Vehicle Phase IV
+                    <img src="assets/img/logo/ob.png" class="platform-logo" title="OpenBVE"><img src="assets/img/logo/h2.png" class="platform-logo" title="Hmmsim 2">輕鐵第四期列車 Light Rail Vehicle Phase IV
                     <span>
                         <a href="https://github.com/HKTSS/LRV-P4" target="_blank">
                             <i class="fa-brands fa-github dlgithub" title="更多作品詳情及操作指南 More details and user guide"></i>
@@ -291,65 +273,65 @@
                     </span>
                 </h2>
                 <div class="row">
-                    <img src="img/dlpg/p4.jpg" class="dlpreview">
+                    <img src="assets/img/dlpg/p4.jpg" class="dlpreview">
                     <div class="fileintro">
                         <p>作品平台：OpenBVE/Hmmsim 2<br>作品類型：列車<br>列車編碼：UTF-8<br>目前版本：正式版 (OpenBVE v2.0.1/Hmmsim v1)</p>
-                        <button class="dlbutton" onclick="ShowModal('p4-modal')"><i class="fas fa-download"></i>下載</i></button>
+                        <button class="dlbutton" data-modal="p4-modal"><i class="fas fa-download"></i>下載</i></button>
                     </div>
                 </div>
             </div>
             <div class="section-top-border dlsection type-train">
                 <h2 class="mb-30">
-                    <img src="img/logo/ob.png" class="platform-logo" title="OpenBVE"><img src="img/logo/h2.png" class="platform-logo" title="Hmmsim 2">輕鐵第三期列車 Light Rail Vehicle Phase III
+                    <img src="assets/img/logo/ob.png" class="platform-logo" title="OpenBVE"><img src="assets/img/logo/h2.png" class="platform-logo" title="Hmmsim 2">輕鐵第三期列車 Light Rail Vehicle Phase III
                 </h2>
                 <div class="row">
-                    <img src="img/dlpg/p3.jpg" class="dlpreview">
+                    <img src="assets/img/dlpg/p3.jpg" class="dlpreview">
                     <div class="fileintro">
                         <p>作品平台：OpenBVE/Hmmsim 2<br>作品類型：列車<br>列車編碼：Big5<br>目前版本：正式版</p>
-                        <button class="dlbutton" onclick="ShowModal('p3-modal')"><i class="fas fa-download"></i>下載</i></button>
+                        <button class="dlbutton" data-modal="p3-modal"><i class="fas fa-download"></i>下載</i></button>
                     </div>
                 </div>
             </div>
             <div class="section-top-border dlsection type-train">
-                <h2 class="mb-30"><img src="img/logo/ob.png" class="platform-logo" title="OpenBVE">HKRSC C-train 2019 增強版 Enhanced</h2>
+                <h2 class="mb-30"><img src="assets/img/logo/ob.png" class="platform-logo" title="OpenBVE">HKRSC C-train 2019 增強版 Enhanced</h2>
                 <div class="row">
-                    <img src="img/dlpg/c-train.jpg" alt="" class="dlpreview">
+                    <img src="assets/img/dlpg/c-train.jpg" alt="" class="dlpreview">
                     <div class="fileintro">
                         <p>作品平台：OpenBVE<br>作品類型：附加檔<br>列車編碼：Big5<br>列車原作者：HKRSC/Nelson Workshop</p>
-                        <button class="dlbutton" onclick="ShowModal('ctrain-modal')"><i class="fas fa-download"></i>下載</button>
+                        <button class="dlbutton"  data-modal="ctrain-modal"><i class="fas fa-download"></i>下載</button>
                     </div>
                 </div>
             </div>
             <div class="section-top-border dlsection type-addon">
                 <h2 class="mb-30">
-                    <img src="img/logo/ob.png" class="platform-logo" title="OpenBVE">HKRSC 地下鐵路套裝荃灣綫材質補檔 TWL Texture Addon
+                    <img src="assets/img/logo/ob.png" class="platform-logo" title="OpenBVE">HKRSC 地下鐵路套裝荃灣綫材質補檔 TWL Texture Addon
                 </h2>
                 <div class="row">
-                    <img src="img/dlpg/twltex.jpg" alt="" class="dlpreview">
+                    <img src="assets/img/dlpg/twltex.jpg" alt="" class="dlpreview">
                     <div class="fileintro">
                         <p>作品平台：OpenBVE<br>作品類型：附加檔<br>路線原作者：HKRSC/Simon Man</p>
-                        <button class="dlbutton" onclick="ShowModal('twltex-modal')"><i class="fas fa-download"></i>下載</button>
+                        <button class="dlbutton" data-modal="twltex-modal"><i class="fas fa-download"></i>下載</button>
                     </div>
                 </div>
             </div>
             <div class="section-top-border dlsection type-addon">
-                <h2 class="mb-30"><img src="img/logo/ob.png" class="platform-logo" title="OpenBVE">Winsome M-Train 聲音補檔 M-Train Sound Addon
+                <h2 class="mb-30"><img src="assets/img/logo/ob.png" class="platform-logo" title="OpenBVE">Winsome M-Train 聲音補檔 M-Train Sound Addon
                 </h2>
                 <div class="row">
-                    <img src="img/dlpg/m-train.jpg" alt="" class="dlpreview">
+                    <img src="assets/img/dlpg/m-train.jpg" alt="" class="dlpreview">
                     <div class="fileintro">
                         <p>作品平台：OpenBVE<br>作品類型：附加檔<br><br>感謝 JamesA259290 提供素材</p>
-                        <button class="dlbutton" onclick="ShowModal('msound-modal')"><i class="fas fa-download"></i>下載</button>
+                        <button class="dlbutton"  data-modal="msound-modal"><i class="fas fa-download"></i>下載</button>
                     </div>
                 </div>
             </div>
             <div class="section-top-border dlsection type-addon">
-                <h2 class="mb-30"><img src="img/logo/o2.png" class="platform-logo" title="OMSI 2">Dennis E500MMC 284 HOF</h2>
+                <h2 class="mb-30"><img src="assets/img/logo/o2.png" class="platform-logo" title="OMSI 2">Dennis E500MMC 284 HOF</h2>
                 <div class="row">
-                    <img src="img/dlpg/mmc.jpg" alt="" class="dlpreview">
+                    <img src="assets/img/dlpg/mmc.jpg" alt="" class="dlpreview">
                     <div class="fileintro">
                         <p>作品平台：OMSI 2<br>作品類型：附加檔<br>適用地圖：Hong Kong 284<br><br>感謝 HKBRDA 提供素材</p>
-                        <button class="dlbutton" onclick="ShowModal('284-hof-modal')"><i class="fas fa-download"></i>下載</button></i>
+                        <button class="dlbutton"  data-modal="284-hof-modal"><i class="fas fa-download"></i>下載</button></i>
                         </a>
                     </div>
                 </div>
@@ -357,56 +339,19 @@
         </div>
     </div>
 
-    <!-- start footer Area -->
-    <footer class="footer-area section-gap">
-        <div class="container">
-            <div class="row">
-                <div class="single-footer-widget">
-                    <h6>關於我們</h6>
-                    <p>一間制作不同模擬遊戲作品的工作室。<br> 目前主力開發OpenBVE作品，希望能帶給大家真實又高質的模擬體驗。</p>
-                    <div class="footer-social d-flex align-items-center">
-                        <a href="https://www.facebook.com/HKTransportSimulationStudio" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="https://www.instagram.com/hktransportsimulationstudio" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                        <!-- <a href="https://twitter.com/hktransimstudio" target="_blank"><i class="fa-brands fa-twitter"></i></a> -->
-                        <a href="https://www.youtube.com/channel/UC_eO6lDvecBjvbx77vbaFlw" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-                        <a href="https://forms.gle/gGQuevPA9cJ64YyV9" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-                        <a href="https://github.com/HKTSS" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    </div>
-                    <br>
-                    <p style="display: inline;" class="footer-text">Copyright &copy;
-                        <script>
-                            document.write(new Date().getFullYear());
-                        </script> Hong Kong Transport Simulation Studio. Some rights reserved.</p>
-                    <p class="footer-text">Template by <a href="https://colorlib.com" target="_blank">Colorlib</a> licensed under CC BY 3.0.</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- End footer Area -->
-
-    <!-- DO NOT REMOVE, function for modal -->
-    <script type="text/javascript">
-        function ShowModal(id) {
-            document.getElementById(id).style.display = "block";
-        }
-
-        function HideModal(id) {
-            $("#" + id).fadeOut("fast", function() {
-                document.getElementById(id).style.display = "none";
-            })
-        }
-    </script>
-    <!-- Modal JS function end -->
-
-    <script src="js/vendor/jquery-2.2.4.min.js"></script>
+    <!-- Handled by components.js -->
+    <div id="footer"></div>
+    
+    <script src="assets/js/components.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-    <script src="js/vendor/bootstrap.min.js"></script>
-    <script src="js/jquery.sticky.js"></script>
-    <script src="js/jquery.nice-select.min.js"></script>
-    <script src="js/parallax.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/jquery.counterup.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.sticky.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/parallax.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
