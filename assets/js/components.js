@@ -37,7 +37,7 @@ const footer = `
                 <div class="footer-social d-flex align-items-center">
                     <a href="https://www.facebook.com/HKTransportSimulationStudio" target="_blank"><i class="fa-brands fa-facebook"></i></a>
                     <a href="https://www.instagram.com/hktransportsimulationstudio" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.youtube.com/channel/UC_eO6lDvecBjvbx77vbaFlw" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.youtube.com/@HKTSS" target="_blank"><i class="fa-brands fa-youtube"></i></a>
                     <a href="https://forms.gle/gGQuevPA9cJ64YyV9" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
                     <a href="https://github.com/HKTSS" target="_blank"><i class="fa-brands fa-github"></i></a>
                 </div>
