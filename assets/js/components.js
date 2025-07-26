@@ -16,7 +16,7 @@ const navbar = `
                 <li><a href="index.html#project">最新消息</a></li>
                 <li><a href="index.html#faq">常見問題</a></li>
                 <li><a href="links.html">相關連結</a></li>
-                <li><a href="https://hktss.github.io/mtr-pids">PIDS 模擬器</a></li>
+                <li><a href="sims.html">模擬器系列</a></li>
                 <li><a href="download.html" class="selecteditem">作品下載</a></li>
             </ul>
         </div>
