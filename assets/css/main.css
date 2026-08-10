@@ -3732,3 +3732,16 @@ h6 {
         background-color: #555;
     }
 }
+
+.tag-new-prj {
+    display: inline-block;
+    line-height: 1;
+    background: rgba(216, 50, 0, 0.897);
+    color: white;
+    padding: 0.35rem;
+    border-radius: 0.2rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-left: 0.5rem;
+    vertical-align: middle;
+}
