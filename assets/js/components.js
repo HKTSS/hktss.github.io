@@ -37,6 +37,7 @@ const footer = `
                 <div class="footer-social d-flex align-items-center">
                     <a href="https://www.facebook.com/HKTransportSimulationStudio" target="_blank"><i class="fa-brands fa-facebook"></i></a>
                     <a href="https://www.instagram.com/hktransportsimulationstudio" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.threads.com/@hktransportsimulationstudio" target="_blank"><i class="fa-brands fa-threads"></i></a>
                     <a href="https://www.youtube.com/@HKTSS" target="_blank"><i class="fa-brands fa-youtube"></i></a>
                     <a href="https://forms.gle/gGQuevPA9cJ64YyV9" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
                     <a href="https://github.com/HKTSS" target="_blank"><i class="fa-brands fa-github"></i></a>
@@ -45,6 +46,7 @@ const footer = `
                 <br>
 
                 <p class="footer-text">Copyright &copy; ${curYear} Hong Kong Transport Simulation Studio. Some rights reserved.</p>
+                <p>Member of the HKRSDA</p>
                 <p class="footer-text">Template by <a href="https://colorlib.com" target="_blank">Colorlib</a> licensed under CC BY 3.0.</p>
             </div>
         </div>
